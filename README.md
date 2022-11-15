@@ -1,8 +1,8 @@
 # Polyglot
 
 Implementing a basic guessing game in as many programming languages as possible.
-This project requires an understanding of the following concepts in the chosen 
-language:
+Each folder contains an implementation is the specified language, and a 
+README.md explaining how to run the code.
 
 ## Game Specification
 
