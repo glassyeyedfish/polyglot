@@ -57,3 +57,10 @@ If the player inputs nothing, they get a unique message.
 Guess number 8:
 Uh... you still there?
 ```
+The game loops until they player either guesses the correct answer, or they failed on thier 99th guess.
+```
+Guess number 99: 100
+Your guess is too low, try again!
+
+Wait... you ran out of guesses! That's it, you lose!
+```
