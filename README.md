@@ -51,3 +51,9 @@ All other invalid inputs are met with the following message.
 Guess number 7: seven
 This is not a valid input!
 ```
+
+If the player inputs nothing, they get a unique message.
+```
+Guess number 8:
+Uh... you still there?
+```
