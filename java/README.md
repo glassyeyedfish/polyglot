@@ -1,3 +1,3 @@
 To build, run: `make`
 
-To play, run `./game`
+To play, run `java Game`

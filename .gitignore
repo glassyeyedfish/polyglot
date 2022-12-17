@@ -1,2 +1,5 @@
-*.class
-*/game
+# C
+c/game
+
+# Java
+java/Game.class

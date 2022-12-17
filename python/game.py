@@ -20,7 +20,7 @@ while guess_count < 10:
     elif guess_str.isnumeric():
         guess_int = int(guess_str)
 
-        if guess_int < 0 or 100 < guess_int:
+        if guess_int < 1 or 100 < guess_int:
             print("Please guess a number between 1 and 100")
         elif guess_int == random_num:
             print("Congradulations! You guesses the correct number!")
@@ -34,7 +34,7 @@ while guess_count < 10:
 
 
     else:
-        print("This is no a valid input!")
+        print("This is not a valid input!")
 
 
 if guess_count == 10:
