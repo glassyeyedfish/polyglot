@@ -18,8 +18,8 @@ Type 'quit' as your guess at any time to quit the game.
 
 Guess number 1:
 ```
-The program keeps track of how many guesses you've taken, and always 
-increments this counter even if the guess is invalid.
+The program keeps track of how many guesses you've taken, and increments the 
+counter when you make a valid guess.
 
 If you choose the correct number, you get the following message, and the 
 program exits.
@@ -28,37 +28,40 @@ Guess number 2: 50
 Congradulations! You guessed the correct number!
 ```
 
-If you choose a number that is too high, you get the following message.
+If you choose a number that is too high, you get the following message. This is 
+a valid guess to the counter increments.
 ```
 Guess number 3: 75
 Your guess is too high, try again!
 ```
 
-If you choose a number that is too low, you get the following message.
+If you choose a number that is too low, you get the following message. This is 
+a valid guess to the counter increments.
 ```
 Guess number 4: 25
 Your guess is too low, try again!
 ```
 
 If you choose a number that is not between 1 and 100, you get the following 
-message.
+message. These guesses are invalid and don't increment the counter.
 ```
 Guess number 5: -10
 Please guess a number between 1 and 100.
 
-Guess number 6: 110
+Guess number 5: 110
 Please guess a number between 1 and 100.
 ```
 
 You can type in 'quit' to quit the game as follows:
 ```
-Guess number 7: quit
+Guess number 5: quit
 Bye!
 ```
 
-All other invalid inputs are met with the following message.
+All other invalid inputs are met with the following message. These are obbiously 
+not valid and thus don't increment the counter.
 ```
-Guess number 8: eight
+Guess number 5: eight
 This is not a valid input!
 ```
 

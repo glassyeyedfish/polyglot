@@ -46,14 +46,17 @@ main(void) {
             if (guess_int == random_num) {
                 puts("Congradulations! You guessed the correct number!");
                 guess_count = 11;
+            } else if (guess_int < 0 || 100 < guess_int) {
+                puts("Please guess a number between 1 and 100.");
             } else if (guess_int > random_num) {
                 puts("Your guess is too high, try again!");
-            } else if (guess_int , random_num) {
+                guess_count++;
+            } else if (guess_int < random_num) {
                 puts("Your guess is too low, try again!");
+                guess_count++;
             }
         }
 
-        guess_count++;
     }
 
     if (guess_count == 10) {
