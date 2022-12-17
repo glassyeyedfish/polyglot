@@ -10,13 +10,14 @@ main(void) {
 
     puts("Welcome to the number guessing game imlemented in C.");
     puts("Please guess a number that has been randomly chosen between 1 and 100.");
-    puts("Type in 'quit' as your guess at any time to quit the game.");
+    puts("You only have 9 guesses, so make them count!");
+    puts("Type 'quit' as your guess at any time to quit the game.");
 
     srand(time(0));
     random_num = (rand() % 100) + 1;
 
     guess_count = 1;
-    while (guess_count < 100) {
+    while (guess_count < 10) {
         // Prompt user for a guess.
         printf("\nGuess number %d: ", guess_count);
 
@@ -34,7 +35,7 @@ main(void) {
         // Handle user input.
         if (strcmp(guess_str, "quit") == 0) {
             puts("Bye!");
-            guess_count = 100;
+            guess_count = 11;
         } else if (guess_int == 0) {
             if (strcmp(guess_str, "0") == 0) {
                 puts("Please guess a number between 1 and 100.");
@@ -44,7 +45,7 @@ main(void) {
         } else {
             if (guess_int == random_num) {
                 puts("Congradulations! You guessed the correct number!");
-                guess_count = 100;
+                guess_count = 11;
             } else if (guess_int > random_num) {
                 puts("Your guess is too high, try again!");
             } else if (guess_int , random_num) {
@@ -54,4 +55,10 @@ main(void) {
 
         guess_count++;
     }
+
+    if (guess_count == 10) {
+        puts("\nWait... you ran out of guesses! That's it, you lose!");
+    }
+
+    return 0;
 }
