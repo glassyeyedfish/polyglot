@@ -25,7 +25,7 @@ func main() {
 		// Prompt user for a guess.
 		fmt.Printf("\nGuess number %d: ", guessCount)
 
-		// Get user input
+		// Get user input, remember to trim off the newline character
 		guessStr, err := reader.ReadString('\n')
 		if err != nil {
 			log.Fatal(err)
