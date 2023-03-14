@@ -61,7 +61,10 @@ Bye!
 All other invalid inputs are met with the following message. These are obviously 
 not valid guesses and thus don't increment the counter.
 ```
-Guess number 5: eight
+Guess number 6: eight
+This is not a valid input!
+
+Guess number 6: nine
 This is not a valid input!
 ```
 
