@@ -58,8 +58,8 @@ Guess number 5: quit
 Bye!
 ```
 
-All other invalid inputs are met with the following message. These are obbiously 
-not valid and thus don't increment the counter.
+All other invalid inputs are met with the following message. These are obviously 
+not valid guesses and thus don't increment the counter.
 ```
 Guess number 5: eight
 This is not a valid input!
